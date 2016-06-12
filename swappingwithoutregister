@@ -1,0 +1,11 @@
+% Swap two numbers without using an intermediate register.
+
+    AREA Rotate,CODE,READONLY
+    ENTRY
+    LDR R0,=0XF63101
+    LDR R1,=0X3211F0
+    EOR R0,R0,R1
+    EOR R1,R0,R1
+    EOR R0,R0,R1
+STOP B STOP
+END
